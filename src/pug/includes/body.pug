@@ -18,10 +18,11 @@ include ./fork.pug
                         label.sr-only(for="filter") Filter opportunity difficulty
                         select#filter
                             for filter in ['All', 'Easy', 'Medium', 'Hard']
-                                option(value=filter.toLowerCase()) #{filter+' difficulties'}
+                                option(value=filter.toLowerCase()) #{filter}
+                    span difficulties
 
                 .item.flex
-                    span In
+                    span in
                     .select-wrapper
                         label.sr-only(for="sorting") Sort opportunities
                         select#sorting
